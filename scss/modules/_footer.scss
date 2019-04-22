@@ -1,0 +1,57 @@
+.footer { 
+	background: #FA7268;
+
+
+	&__copyright { 
+	}
+
+	&__network { 
+		width: 20%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__link { 
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.iconfacebook {
+	width: 33px;
+	height: 33px;
+
+}
+
+.iconfacebook:hover {
+	
+}
+
+
+.iconinstagram {
+	width: 33px;
+	height: 33px;
+ // fill: red;
+}
+
+.iconinstagram:hover .iconinstagram{
+
+ fill: red;
+ }
+
+
+.iconhouse {
+	width: 36px;
+	height: 33px;
+
+}
+
+.shcontainer--footer { 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: $white;
+	font: 300 18px $opensans;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

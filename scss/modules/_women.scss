@@ -1,0 +1,73 @@
+.women { 
+	padding-top: 40px;
+	padding-bottom: 112px;
+
+	&__text { 
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+
+	}
+
+	&__title { 
+		width: 31%;
+		position: relative;
+
+	}
+
+
+	&__description {
+		position: relative;
+
+	}
+
+	&__description::after { 
+		content: 'trend';
+		font: 500 500px $teko;
+		color: $cosmos;
+		position: absolute;
+		display: block;
+		text-transform: uppercase;
+		top: 158px;
+		right: -256px;
+		z-index: -1;
+	}
+
+
+	&__wrap { 
+		position: relative;
+	}
+
+	&__wrap::after { 
+		content: '01';
+		font: 100px $teko;
+		color: $salmon;
+		position: absolute;
+		display: block;
+		z-index: 1;
+		bottom: -80px;
+		right: 20px;
+
+	}
+
+	&__img {
+
+
+
+	}
+
+
+}
+
+
+	// &__title::after { 
+	// 	content: 'trend';
+	// 	font: 500 500px $teko;
+	// 	color: $cosmos;
+	// 	position: absolute;
+	// 	display: block;
+	// }
+
+

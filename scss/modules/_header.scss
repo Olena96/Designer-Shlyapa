@@ -1,0 +1,156 @@
+.header {
+	position: fixed;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	right: 12px;
+}
+
+.logo {
+	font: 700 36px $economica;
+	color: $salmon;
+	padding-top: 40px;
+}
+
+.menu {
+	padding-top: 50px;
+
+
+	&__item {
+		padding-bottom:25px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+    position: relative;
+
+    &:hover {
+      .menu__text {
+        animation: menu 1.5s ease-in-out .9s forwards;
+      }
+      &:after {
+        animation: line .3s ease-in-out .9s forwards;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: $salmon;
+      right: 73px;
+      top: 36px;
+
+    }
+
+  }
+
+  &__text {
+    border: 2px solid $salmon;
+    font: 300 32px $opensans;
+
+    background: #fff;
+    margin-right: 30px;
+    position: relative;
+    opacity: 0;
+    overflow: hidden;
+    max-width: 0;
+    white-space: nowrap;
+  }
+
+
+
+  &__link {
+    text-decoration: none;
+    font: 45px $teko;
+    color: $cosmos;
+    padding: 7px 20px 2px 20px;
+    text-shadow: white 1px 1px 0, white -1px -1px 0,
+    white -1px 1px 0, white 1px -1px 0;
+    width: 73px;
+    height: 73px;
+    display: flex;
+  }
+
+}
+
+@keyframes line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30px;
+  }
+}
+
+@keyframes menu {
+  from {
+    opacity:0;
+    max-width: 0;
+  }
+
+  to {
+    opacity:1;
+    max-width: 350px;
+    padding: 0 20px;
+  }
+}
+
+// Button hover
+.draw {
+
+  // Required, since we're setting absolute on pseudo-elements
+  position: relative;
+  vertical-align: middle;
+  transition: color 0.25s;
+
+  &::before,
+  &::after {
+  	box-sizing: inherit;
+  	content: '';
+  	position: absolute;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  // This covers the top & right borders (expands right, then down)
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  // And this the bottom & left borders (expands left, then up)
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.menu__item:hover .draw {
+  color: $salmon;
+
+  &::before,
+  &::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    border-top-color: $salmon; // Make borders visible
+    border-right-color: $salmon;
+    transition:
+      width 0.25s ease-out, // Width expands first
+      height 0.25s ease-out 0.25s; // And then height
+    }
+    &::after {
+    border-bottom-color: $salmon; // Make borders visible
+    border-left-color: $salmon;
+    transition:
+      border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+      width 0.25s ease-out 0.5s, // And then exanding width
+      height 0.25s ease-out 0.75s; // And finally height
+    }
+  }
