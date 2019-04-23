@@ -11,16 +11,16 @@
 
 	}
 
-	 &__wrapper::after { 
-	 	content: '04';
-	 	font: 100px $teko;
-	 	color: $salmon;
-	 	position: absolute;
-	 	display: block;
-	 	z-index: 1;
-	 	bottom: -110px;
-    	left: -80px;
-	 }
+	&__wrapper::after { 
+		content: '04';
+		font: 100px $teko;
+		color: $salmon;
+		position: absolute;
+		display: block;
+		z-index: 1;
+		bottom: -110px;
+		left: -80px;
+	}
 
 	&__img {
 		border: 2px solid $salmon;
