@@ -26,9 +26,9 @@
 
 	&:hover {
 		// fill: #3C5A99;
-		transition: .2іs;
-		-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-		filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+		transition: .2s;
+		-webkit-filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .7));
+		filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .7));
 		
 	}
 }
@@ -43,8 +43,9 @@
 	&:hover{
 		// fill: #833AB4;
 		transition: .2s;
-		-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-		filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+		-webkit-filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .7));
+		filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .7));
+		
 	}
 }
 
@@ -57,8 +58,9 @@
 	&:hover {
 		// fill: #F1C40F;
 		transition: .2s;
-		-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
-		filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+		-webkit-filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .7));
+		filter: drop-shadow( 0px 3px 2px rgba(0, 0, 0, .7));
+		
 	}
 }
 
