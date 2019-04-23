@@ -5,8 +5,10 @@
 	outline: none;
 	box-sizing: border-box;
 
-
+	&::selection { 
+	background-color: $carmine; }
 }
+
 
 img {
 	max-width: 100%;
